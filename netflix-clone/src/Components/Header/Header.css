@@ -4,37 +4,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(20, 20, 20); */
-    background-color: transparent;
-    /* kejerbawu data lemasigebat enidimechen */
+    background-color: rgb(20, 20, 20);
     height: 10vh;
-    /* vh=viw heaiht, divice size yaderigilinall */
     color: white;
     transition: all 0.5s;
     transition-timing-function: ease-in;
     z-index: 1;
 }
-.nav_black{
-    background-color: rgb(20, 20, 20); 
+.nav__black{
+    background-color:  rgb(20, 20, 20);
 }
 .header_container{
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: yellow; */
+    margin-right: 50px;
 }
 .header_left ul{
     width: 140%;
     display: flex;
-    list-style-type: none;
     justify-content: space-between;
+    align-items: center;
+    list-style: none;
     cursor: pointer;
 }
 .header_right ul{
     width: 150%;
     display: flex;
-    list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-around;
+    list-style: none;
     cursor: pointer;
 }
