@@ -10,7 +10,7 @@ import './Baner.css';
         const fetchNetflixOriginals = async () => {
         try {
             const response = await axiosInstance.get(requests.fetchNetflixOriginals);
-            console.log(response);
+            // console.log(response);
             setMovie(
             response.data.results[
                 Math.floor(Math.random() * response.data.results.length)
