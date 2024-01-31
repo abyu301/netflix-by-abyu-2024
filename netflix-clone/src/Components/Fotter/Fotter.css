@@ -42,3 +42,24 @@
     font-size: 12px;
     margin-bottom:10px;
 }
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .footer_inner_container {
+        width: 90%; 
+    }
+
+    .footer_icons {
+        width: auto; 
+        margin-left: 0; 
+    }
+
+    .footer_data ul {
+        flex-direction: row; 
+        height: auto; 
+    }
+
+    .service_code {
+        width: auto; 
+    }
+}

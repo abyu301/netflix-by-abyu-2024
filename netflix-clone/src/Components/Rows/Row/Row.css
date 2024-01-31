@@ -27,3 +27,29 @@
     margin-left: 20px;
 	color: white;
 }
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .row__posters {
+        padding: 20px 0; /* Remove horizontal padding to fit posters within screen width */
+        overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+        align-items: flex-start; /* Align posters to the start of the flex container */
+    }
+
+    .row__poster {
+        max-height: 150px; /* Adjust maximum height of posters for better display on smaller screens */
+        margin-right: 5px; /* Reduce right margin for smaller screens */
+    }
+
+    .row__poster:hover {
+        transform: scale(1.05); /* Reduce scale on hover for smaller screens */
+    }
+
+    .row__posterLarge {
+        max-height: 200px; /* Adjust maximum height of large posters for smaller screens */
+    }
+
+    .row__posterLarge:hover {
+        transform: scale(1.06); /* Reduce scale on hover for larger posters on smaller screens */
+    }
+}

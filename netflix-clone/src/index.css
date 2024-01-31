@@ -15,3 +15,10 @@ body {
   background-color: var(--bg-color);
   color: var(--primary-color);
 }
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}

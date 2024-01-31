@@ -36,3 +36,43 @@
     list-style: none;
     cursor: pointer;
 }
+.menu_open .header_left ul {
+    display: flex;
+}
+
+.menu_button {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu_button span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .header_container {
+        width: 95%; 
+        margin-right: 10px;
+    }
+
+    .header_left img {
+        margin-right: auto; 
+    }
+
+    .menu_button {
+        display: block; 
+    }
+
+    .header_left ul {
+        position: static;
+        display: none; 
+    }
+}

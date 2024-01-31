@@ -25,19 +25,30 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
     }, [fetchUrl]);
 
     const handleClick = (movie) => {
+        // If a trailer is already playing (trailerUrl is not empty)
         if (trailerUrl) {
-            setTrailerUrl('')
+            // Clear the trailerUrl, effectively closing the trailer
+            setTrailerUrl('');
         } else {
+            // If no trailer is playing, find and play the trailer for the clicked movie
             movieTrailer(movie?.title || movie?.name || movie?.original_name)
                 .then((url) => {
-                    console.log(url)
-                    const urlParams = new URLSearchParams(new URL(url).search)
-                    console.log(urlParams)
-                    console.log(urlParams.get('v'))
+                    // Log the URL of the trailer
+                    console.log(url);
+    
+                    // Extract video ID from the trailer URL
+                    const urlParams = new URLSearchParams(new URL(url).search);
+                    console.log(urlParams);
+    
+                    // Log the video ID
+                    console.log(urlParams.get('v'));
+    
+                    // Set the trailerUrl state with the video ID
                     setTrailerUrl(urlParams.get('v'));
-                })
+                });
         }
     }
+    
 
     const opts = {
         height: '390',

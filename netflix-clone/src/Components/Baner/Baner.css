@@ -54,5 +54,16 @@
 	);
 }
 
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .banner__contents {
+        padding-top: 200px; 
+    }
+
+    .banner__description {
+        width: auto;
+        max-width: none; 
+    }
+}
 
 

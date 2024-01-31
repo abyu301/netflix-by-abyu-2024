@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import"./Header.css"
 import NetflixLogo from"../../assets/images/Netflix_Logo_PMS.png"
 import SearchIcon from '@mui/icons-material/Search';
@@ -6,7 +6,12 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-    function Header() {
+function Header() {
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
     return (
         <>
             <div className='header_outer_container'>
@@ -21,6 +26,11 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
                         <li>Mylist</li>
                         <li>Browse by Language</li>
                         </ul>
+                        <button className="menu_button" onClick={toggleMenu}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     </div>
                     <div className='header_right'>
                         <ul> 
@@ -37,4 +47,4 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
     )
     }
 
-    export default Header
+    export default Header;
