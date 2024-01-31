@@ -36,7 +36,7 @@ function Header() {
                         <ul> 
                             <li><SearchIcon/></li>
                             <li>Kids</li>
-                            <li><NotificationsNoneIcon/></li>
+                            <li><NotificationsNoneIcon /></li>
                             <li><AccountBoxIcon/></li>
                             <li><ArrowDropDownIcon/></li>
                         </ul>
