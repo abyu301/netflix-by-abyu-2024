@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/netflix-by-abyu-2024/static/css/main.fc308923.css",
+    "main.js": "/netflix-by-abyu-2024/static/js/main.b767691a.js",
+    "static/media/Netflix_Logo_PMS.png": "/netflix-by-abyu-2024/static/media/Netflix_Logo_PMS.303904f75553a51bbf31.png",
+    "index.html": "/netflix-by-abyu-2024/index.html",
+    "main.fc308923.css.map": "/netflix-by-abyu-2024/static/css/main.fc308923.css.map",
+    "main.b767691a.js.map": "/netflix-by-abyu-2024/static/js/main.b767691a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc308923.css",
+    "static/js/main.b767691a.js"
+  ]
+}
